@@ -33,6 +33,9 @@
 ## 仓库结构
 见英文版 README 或直接浏览目录。
 
+## 案例研究
+👉 [docs/case-study.md](docs/case-study.md) —《一场智能体创业实验：从空目录到开源公司》
+
 ## 快速上手
 见 [`starter-kit/GUIDE.md`](starter-kit/GUIDE.md)（实操指南 v1.1，[English](starter-kit/GUIDE.en.md)）。
 
@@ -41,4 +44,5 @@
 
 ## 许可
 [MIT](LICENSE) © 2026 Agentic Co-Lab
+
 

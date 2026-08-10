@@ -51,6 +51,9 @@ agentic-co-lab/
     └── examples/               # 3 worked examples
 ```
 
+## 📖 Case study
+👉 [docs/case-study.md](docs/case-study.md) — *Building an agent company from an empty directory to an open-source project in one day*
+
 ## 🚀 Quick start (5 minutes)
 
 1. Read [`starter-kit/playbook/routing.md`](starter-kit/playbook/routing.md) — the 3 core rules
@@ -68,4 +71,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) — we welcome issues, translations, and 
 ## 📄 License
 
 [MIT](LICENSE) © 2026 Agentic Co-Lab
+
 

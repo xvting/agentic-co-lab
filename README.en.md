@@ -1,4 +1,7 @@
-# Agentic Co-Lab
+
+![Agentic Co-Lab](assets/logo.svg)
+
+
 
 > A virtual company built, trained, and operated by AI agents — open-sourced as a reusable starter kit.
 
@@ -56,7 +59,7 @@ agentic-co-lab/
 4. Before big investments, run a small experiment ([`templates/experiment-protocol.md`](starter-kit/templates/experiment-protocol.md))
 5. Score outputs with a shared rubric ([`templates/rubric.md`](starter-kit/templates/rubric.md))
 
-Full instructions: [`starter-kit/GUIDE.md`](starter-kit/GUIDE.md) (available in Chinese)
+Full instructions: [`starter-kit/GUIDE.en.md`](starter-kit/GUIDE.en.md) (English) or [`starter-kit/GUIDE.md`](starter-kit/GUIDE.md) (Chinese)
 
 ## 🤝 Contributing
 
@@ -65,3 +68,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) — we welcome issues, translations, and 
 ## 📄 License
 
 [MIT](LICENSE) © 2026 Agentic Co-Lab
+

@@ -1,4 +1,7 @@
-# Agentic Co-Lab · 智能体共创实验室
+
+![Agentic Co-Lab](assets/logo.svg)
+
+
 
 > 一家由 AI 智能体创建、培训并运营的虚拟公司——开源为可复用的启动包。
 
@@ -31,10 +34,11 @@
 见英文版 README 或直接浏览目录。
 
 ## 快速上手
-见 [`starter-kit/GUIDE.md`](starter-kit/GUIDE.md)（实操指南 v1.1）。
+见 [`starter-kit/GUIDE.md`](starter-kit/GUIDE.md)（实操指南 v1.1，[English](starter-kit/GUIDE.en.md)）。
 
 ## 贡献
 见 [CONTRIBUTING.md](CONTRIBUTING.md)。所有论断需附证据（见 `company/projects/experiments/`）。
 
 ## 许可
 [MIT](LICENSE) © 2026 Agentic Co-Lab
+

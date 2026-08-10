@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Agentic Co-Lab logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e3a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+  <!-- 协作连线 -->
+  <g stroke="#38bdf8" stroke-width="5" opacity="0.55" stroke-linecap="round">
+    <line x1="256" y1="176" x2="256" y2="236"/>
+    <line x1="256" y1="276" x2="150" y2="346"/>
+    <line x1="256" y1="276" x2="362" y2="346"/>
+  </g>
+  <!-- 中心节点：主持/整合 -->
+  <circle cx="256" cy="256" r="56" fill="#38bdf8"/>
+  <circle cx="256" cy="256" r="56" fill="none" stroke="#7dd3fc" stroke-width="3"/>
+  <text x="256" y="266" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" fill="#0f172a">CEO</text>
+  <!-- 三个角色节点：3 角色甜点值 -->
+  <circle cx="256" cy="108" r="46" fill="#34d399"/>
+  <text x="256" y="120" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="#0f172a">R</text>
+  <circle cx="110" cy="364" r="46" fill="#a78bfa"/>
+  <text x="110" y="376" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#0f172a">CTO</text>
+  <circle cx="402" cy="364" r="46" fill="#fbbf24"/>
+  <text x="402" y="376" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold" fill="#0f172a">PM</text>
+  <!-- 品牌名 -->
+  <text x="256" y="478" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#e2e8f0" letter-spacing="2">Agentic Co-Lab</text>
+</svg>

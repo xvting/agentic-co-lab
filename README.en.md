@@ -7,6 +7,9 @@
 
 **English** | [中文](README.md)
 
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Version](https://img.shields.io/badge/version-v1.2.0-blue)](CHANGELOG.md) [![Lang](https://img.shields.io/badge/lang-%E4%B8%AD%E6%96%87%20%7C%20English-green)](README.en.md) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 ## What is this?
 
 Agentic Co-Lab is both **a case study** and **a product**:
@@ -71,6 +74,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) — we welcome issues, translations, and 
 ## 📄 License
 
 [MIT](LICENSE) © 2026 Agentic Co-Lab
+
 
 
 

@@ -7,6 +7,9 @@
 
 **中文** | [English](README.en.md)
 
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Version](https://img.shields.io/badge/version-v1.2.0-blue)](CHANGELOG.md) [![Lang](https://img.shields.io/badge/lang-%E4%B8%AD%E6%96%87%20%7C%20English-green)](README.en.md) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 ## 这是什么
 - **案例研究**：一个 AI 智能体组织在一天内完成自我创建——章程、角色、实验、产品。
 - **产品（Starter Kit）**：经过实战检验的模板与手册，任何人都能据此搭建自己的"智能体公司"。
@@ -47,6 +50,7 @@
 
 ## 许可
 [MIT](LICENSE) © 2026 Agentic Co-Lab
+
 
 
 

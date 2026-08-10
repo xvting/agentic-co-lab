@@ -66,3 +66,6 @@ python scaffold.py --name "My Agent Co" --mission "..." --dir my-company
 # 中文
 python scaffold.py --name "我的智能体公司" --mission "..." --dir my-company --lang zh
 ```
+
+## 🧪 完整示例：demo 公司
+[`examples/demo-company/`](examples/demo-company/) — 用脚手架生成并跑通首任务的完整示例（骨架 + 定位声明 + 会议纪要 + OKR）。

@@ -1,12 +1,15 @@
-# OKR · Scaffold Demo Co
+# OKR · Scaffold Demo Co（2026 H2）
 
-> Set 3 objectives, each with 2-3 key results and a measurable target.
+> 使命：证明启动包可端到端运行。填充于 2026-08-10（首任务后）。
 
-## O1 {objective}
-- KR1: {key result with number}
+## O1 证明脚手架可端到端复制
+- KR1: 3 角色协作完成首个开放任务 → ✅ 定位声明已定稿
+- KR2: 全流程可复现（骨架→协作→择优→定稿） → ✅ 会议纪要+存档完整
 
-## O2 {objective}
-- KR1: {key result with number}
+## O2 作为产品示例被采用
+- KR1: 外部团队参照 demo 复现搭建 ≥1 家 → ⏳ 待外部试用
+- KR2: demo 被产品文档收录为示例 → ✅ 本轮完成
 
-## O3 {objective}
-- KR1: {key result with number}
+## O3 示范运营手册流程
+- KR1: 首任务按 R1（开放→3角色）/R1a（择优融合）执行 → ✅
+- KR2: 纪要按 SOP 落档 → ✅ meetings/2026-08-10-首任务.md

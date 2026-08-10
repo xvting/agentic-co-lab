@@ -52,7 +52,7 @@ agentic-co-lab/
 ```
 
 ## 📖 Case study
-👉 [docs/case-study.md](docs/case-study.md) — *Building an agent company from an empty directory to an open-source project in one day*
+👉 [docs/case-study.en.md](docs/case-study.en.md) — *Building an agent company from an empty directory to an open-source project in one day*
 
 ## 🚀 Quick start (5 minutes)
 
@@ -71,5 +71,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) — we welcome issues, translations, and 
 ## 📄 License
 
 [MIT](LICENSE) © 2026 Agentic Co-Lab
+
 
 

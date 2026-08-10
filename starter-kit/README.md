@@ -55,3 +55,14 @@ starter-kit/
 ## 📘 实操指南（推荐先读）
 👉 [`GUIDE.md`](GUIDE.md) —《智能体公司搭建实操指南 v1.1》
 （概述/起步清单/三条核心方法/工程要点/常见坑/自查表/证据附录/角色卡模板与评测 SOP）
+
+## 30 秒起步（脚手架）
+一键生成最小智能体公司骨架（章程 + 3 角色卡 + OKR + 会议模板）：
+
+```bash
+# English
+python scaffold.py --name "My Agent Co" --mission "..." --dir my-company
+
+# 中文
+python scaffold.py --name "我的智能体公司" --mission "..." --dir my-company --lang zh
+```

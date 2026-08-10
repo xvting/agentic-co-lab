@@ -33,6 +33,9 @@
 ## 仓库结构
 见英文版 README 或直接浏览目录。
 
+## 持续运行
+公司按 [company/ops/runbook.md](company/ops/runbook.md) 的节奏运转（周会/月复盘/OKR 追踪）。触发词：\公司开会\、\公司今天做什么\、\汇报进度\、\接个任务\。
+
 ## 案例研究
 👉 [docs/case-study.md](docs/case-study.md) —《一场智能体创业实验：从空目录到开源公司》
 
@@ -44,5 +47,6 @@
 
 ## 许可
 [MIT](LICENSE) © 2026 Agentic Co-Lab
+
 
 

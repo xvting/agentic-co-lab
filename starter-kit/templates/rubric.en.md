@@ -1,6 +1,7 @@
 # Rubric Template
 
 > Purpose: standardize scoring, reduce subjective disputes. Objective cases first; fixed scales for subjective dimensions.
+> Note: this file is only a scaffolding template for new companies/experiments; the authoritative benchmark rubric lives in `benchmark/tasks/rubric.md`.
 
 ## Objective cases (run code when possible)
 - Case set: {{test_suite.py or case list}}

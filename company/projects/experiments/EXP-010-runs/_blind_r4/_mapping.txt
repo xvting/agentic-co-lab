@@ -1,0 +1,6 @@
+# EXP-010 盲评映射（评分完成前不查看）
+# 随机种子 seed=1010
+稿A = workflow_security.md
+稿B = workflow_release.md
+稿C = workflow_eng.md
+稿D = workflow_solo.md

@@ -2,6 +2,7 @@
 
 > 方法论文档 · 基于 Agentic Co-Lab EXP-001~009 真实实验证据（n=1~3，探索性）
 > 版本 v1.0 · 2026-08-11 · 对外可引用/分享 · 中文
+> 双语互链：中文版 ↔ [English](verification-methodology.en.md)（同一 v1.0，实验编号与数据一致）
 > 证据来源：`company/projects/experiments/`（EXP-001~009 报告）、`benchmark/README.md`、`company/operations-manual.md`（R2/R3/R4）
 
 ## 一、核心思路：用对照实验回答"协作有没有用"

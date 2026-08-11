@@ -22,10 +22,10 @@ def gh(method, path, payload=None):
     if payload is not None:
         data = json.dumps(payload).encode("utf-8")
         headers["Content-Type"] = "application/json"
-    req = urllib.request.Request(url, data=data, headers=headers, method=method)
     import time as _time
     last_err = None
     for attempt in range(6):
+        req = urllib.request.Request(url, data=data, headers=headers, method=method)
         try:
             with urllib.request.urlopen(req, timeout=90) as resp:
                 body = resp.read().decode("utf-8")

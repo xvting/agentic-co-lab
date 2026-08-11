@@ -1,0 +1,110 @@
+{
+  "crewAIInc/crewAI": {
+    "stars": 56932,
+    "forks": 8120,
+    "pushed_at": "2026-08-11T08:11:00Z",
+    "license": "MIT",
+    "archived": false,
+    "full_name": "crewAIInc/crewAI",
+    "fetched_at_utc": "2026-08-11T10:34:11+00:00"
+  },
+  "FoundationAgents/MetaGPT": {
+    "stars": 69770,
+    "forks": 8879,
+    "pushed_at": "2026-01-21T10:12:33Z",
+    "license": "MIT",
+    "archived": false,
+    "full_name": "FoundationAgents/MetaGPT",
+    "fetched_at_utc": "2026-08-11T10:34:21+00:00"
+  },
+  "openai/openai-agents-python": {
+    "stars": 28556,
+    "forks": 4477,
+    "pushed_at": "2026-08-11T09:42:01Z",
+    "license": "MIT",
+    "archived": false,
+    "full_name": "openai/openai-agents-python",
+    "fetched_at_utc": "2026-08-11T10:34:30+00:00"
+  },
+  "google/adk-python": {
+    "stars": 21069,
+    "forks": 3814,
+    "pushed_at": "2026-08-11T09:59:28Z",
+    "license": "Apache-2.0",
+    "archived": false,
+    "full_name": "google/adk-python",
+    "fetched_at_utc": "2026-08-11T10:34:39+00:00"
+  },
+  "pydantic/pydantic-ai": {
+    "stars": 19219,
+    "forks": 2503,
+    "pushed_at": "2026-08-11T10:23:52Z",
+    "license": "MIT",
+    "archived": false,
+    "full_name": "pydantic/pydantic-ai",
+    "fetched_at_utc": "2026-08-11T10:34:48+00:00"
+  },
+  "mem0ai/mem0": {
+    "stars": 63014,
+    "forks": 7344,
+    "pushed_at": "2026-08-11T10:26:02Z",
+    "license": "Apache-2.0",
+    "archived": false,
+    "full_name": "mem0ai/mem0",
+    "fetched_at_utc": "2026-08-11T10:34:58+00:00"
+  },
+  "elizaOS/eliza": {
+    "stars": 18998,
+    "forks": 5626,
+    "pushed_at": "2026-08-11T10:34:45Z",
+    "license": "MIT",
+    "archived": false,
+    "full_name": "elizaOS/eliza",
+    "fetched_at_utc": "2026-08-11T10:35:08+00:00"
+  },
+  "a2aproject/A2A": {
+    "stars": 25284,
+    "forks": 2561,
+    "pushed_at": "2026-08-10T08:49:51Z",
+    "license": "Apache-2.0",
+    "archived": false,
+    "full_name": "a2aproject/A2A",
+    "fetched_at_utc": "2026-08-11T10:35:19+00:00"
+  },
+  "modelcontextprotocol/servers": {
+    "stars": 89428,
+    "forks": 11423,
+    "pushed_at": "2026-08-10T02:41:59Z",
+    "license": "NOASSERTION",
+    "archived": false,
+    "full_name": "modelcontextprotocol/servers",
+    "fetched_at_utc": "2026-08-11T10:35:28+00:00"
+  },
+  "Aider-AI/aider": {
+    "stars": 48117,
+    "forks": 4836,
+    "pushed_at": "2026-05-22T14:02:20Z",
+    "license": "Apache-2.0",
+    "archived": false,
+    "full_name": "Aider-AI/aider",
+    "fetched_at_utc": "2026-08-11T10:35:38+00:00"
+  },
+  "run-llama/llama_index": {
+    "stars": 51556,
+    "forks": 7912,
+    "pushed_at": "2026-08-09T22:20:15Z",
+    "license": "MIT",
+    "archived": false,
+    "full_name": "run-llama/llama_index",
+    "fetched_at_utc": "2026-08-11T10:35:49+00:00"
+  },
+  "mastra-ai/mastra": {
+    "stars": 27098,
+    "forks": 2606,
+    "pushed_at": "2026-08-11T10:35:09Z",
+    "license": "NOASSERTION",
+    "archived": false,
+    "full_name": "mastra-ai/mastra",
+    "fetched_at_utc": "2026-08-11T10:35:59+00:00"
+  }
+}

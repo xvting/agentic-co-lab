@@ -1,0 +1,6 @@
+# EXP-010 独立复跑盲评映射（评分完成前不查看）
+# 随机种子 seed=501；盲评副本已去除角色标识标题行（脱敏）
+稿A = workflow_solo.md
+稿B = workflow_security.md
+稿C = workflow_release.md
+稿D = workflow_eng.md

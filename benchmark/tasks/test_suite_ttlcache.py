@@ -1,4 +1,9 @@
-"""统一测试套件 · EXP-003 (TTLCache)"""
+"""统一测试套件 · EXP-003（TTLCache，13 断言客观评测）
+
+已知基线（EXP-003，n=1 探索性）：客观 13/13 全过（单人/协作一致）；
+主观质量（可读/健壮/效率，总分 15）单人 14/15，协作整合 15/15（+7%），
+协作组内方差 10/12/15。数据源：company/projects/experiments/EXP-003-报告.md
+"""
 import time
 
 def run_tests(CacheCls):

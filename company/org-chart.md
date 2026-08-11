@@ -28,3 +28,16 @@ graph TD
 
 > 角色卡详见 `company/agents/`，每个角色 = 身份 + 培训背景 + 工作原则。
 
+## 管理层级（R7 · 2026-08-11）
+```mermaid
+graph TD
+    F[创始人] --> CEO[CEO]
+    CEO --> R[研究院 · 研究员]
+    CEO --> T[工程部 · CTO]
+    CEO --> P[产品部 · PM]
+    CEO --> O[运营部 · COO]
+    R --> DS[数据科学家]
+    P --> CM[市场官]
+    O --> CP[合规官]
+```
+- 授权链：CEO → 部门负责人 → 执行人；汇报反向。

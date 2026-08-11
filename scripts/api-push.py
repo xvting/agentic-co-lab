@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Push local commits to GitHub via Git Data API (works when git-over-https is blocked)."""
-import subprocess, json, base64, sys, re
+import subprocess, json, base64, sys, re, urllib.request, urllib.error
 from datetime import datetime, timezone
 
 REPO = "xvting/agentic-co-lab"
@@ -9,16 +9,40 @@ def sh(*args):
     return subprocess.check_output(args, text=True, encoding="utf-8", errors="replace").strip()
 
 def gh(method, path, payload=None):
-    cmd = ["gh", "api", "--method", method, path]
-    enc = dict(encoding="utf-8", errors="replace")
+    """Call GitHub REST API via urllib (HTTP/1.1) to avoid gh's http2 GOAWAY flakiness."""
+    token = subprocess.check_output(["gh", "auth", "token"], text=True, encoding="utf-8", errors="replace").strip()
+    url = f"https://api.github.com/{path}"
+    headers = {
+        "Authorization": f"Bearer {token}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "api-push",
+    }
+    data = None
     if payload is not None:
-        cmd = cmd + ["--input", "-"]
-        r = subprocess.run(cmd, input=json.dumps(payload), capture_output=True, text=True, **enc)
-    else:
-        r = subprocess.run(cmd, capture_output=True, text=True, **enc)
-    if r.returncode != 0:
-        raise RuntimeError("gh api failed: " + r.stderr)
-    return json.loads(r.stdout)
+        data = json.dumps(payload).encode("utf-8")
+        headers["Content-Type"] = "application/json"
+    req = urllib.request.Request(url, data=data, headers=headers, method=method)
+    import time as _time
+    last_err = None
+    for attempt in range(6):
+        try:
+            with urllib.request.urlopen(req, timeout=90) as resp:
+                body = resp.read().decode("utf-8")
+                return json.loads(body) if body else {}
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode("utf-8", "replace")
+            if e.code >= 500 and attempt < 5:
+                last_err = f"HTTP {e.code}"
+                _time.sleep(4 * (attempt + 1))
+                continue
+            raise RuntimeError(f"HTTP {e.code}: {detail[:500]}")
+        except Exception as e:
+            last_err = f"{type(e).__name__}: {e}"
+            if attempt < 5:
+                _time.sleep(4 * (attempt + 1))
+                continue
+    raise RuntimeError(f"API failed after retries: {last_err}")
 
 def parse_commit(sha):
     raw = sh("git", "cat-file", "-p", sha)

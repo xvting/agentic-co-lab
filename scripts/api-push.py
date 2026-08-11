@@ -32,8 +32,9 @@ def gh(method, path, payload=None):
                 return json.loads(body) if body else {}
         except urllib.error.HTTPError as e:
             detail = e.read().decode("utf-8", "replace")
-            if e.code >= 500 and attempt < 5:
-                last_err = f"HTTP {e.code}"
+            # 400 'malformed request' 多为网络层截断，幂等操作可安全重试
+            if attempt < 5:
+                last_err = f"HTTP {e.code}: {detail[:120]}"
                 _time.sleep(4 * (attempt + 1))
                 continue
             raise RuntimeError(f"HTTP {e.code}: {detail[:500]}")

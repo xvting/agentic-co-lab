@@ -3,7 +3,7 @@
 > 统一评测口径，让不同团队/实验的产出可对比、可复现。
 > 依据 Agentic Co-Lab EXP-001~005 沉淀。配套文档：`starter-kit/playbook/`；评测量表唯一权威来源：`tasks/rubric.md`（`starter-kit/templates/rubric.md` 仅为脚手架模板，不作评测口径）。
 
-## 任务清单（当前 7 个标准任务）
+## 任务清单（当前 8 个标准任务）
 | 任务 | 类型 | 评测方式 | 文件 |
 |---|---|---|---|
 | 括号匹配 | 编码·确定性 | 客观测试套件（基线已建立：EXP-002） | `tasks/test_suite_brackets.py` |
@@ -13,6 +13,7 @@
 | 发布工作流 | 行为规范·开放 | 主观量表（规范类 5 维）＋规范覆盖核验（基线已建立：EXP-010） | `tasks/task-workflow-release-norms.md` |
 | 日志分析 | 编码·数据处理 | 客观测试套件 + 主观补充（基线已建立：EXP-008） | `tasks/test_suite_log_analyzer.py` |
 | 支付归因 | 分析·推理 | 主观量表（5 维）（基线已建立：EXP-009） | `tasks/task-analysis-attribution.md` |
+| 库存模块 | 编码·自行设计接口 | 客观行为测试（adapter 电池）+ 主观量表（接口类 5 维）（基线待建立：EXP-011） | `tasks/task-inventory-api.md` |
 
 ## 怎么跑
 ### 编码任务（客观）
@@ -21,6 +22,9 @@ python tasks/test_suite_brackets.py <你的解文件.py>   # 输出 RESULT n/m
 python tasks/test_suite_ttlcache.py <你的解文件.py>
 python tasks/test_suite_log_analyzer.py <你的解文件.py>
 ```
+
+### 自行设计接口编码任务（EXP-011 起）
+接口由执行者自行定义，无法用单一测试文件直测：评测方按各解 `USAGE.md` 撰写 adapter（只使用公开接口、不改解代码），把解 API 归一化后跑统一断言电池（`company/projects/experiments/EXP-011-runs/_harness/test_suite_inventory_api.py`，33 断言）。
 
 ### 文案/战略/分析任务（主观）
 1. 用 `tasks/task-*.md` 中的任务描述，让单人/协作组各自产出。
@@ -44,6 +48,7 @@ python tasks/test_suite_log_analyzer.py <你的解文件.py>
 - 角色数：择优上限 3 角色饱和（23/25），5/7 无增量
 
 ### 任务级基线（含 n、口径、结论；详见 `company/projects/experiments/`）
+- 库存模块（EXP-011 基线待建立，方案见 `EXP-011-方案.md`）——编码·自行设计接口：接口由执行者自定（WHAT 指定、HOW 自由），客观用 adapter 电池（33 断言）+ 盲评接口类 5 维；首跑增益待独立 spawn 后测定
 - 定位声明（EXP-001 基线，n=1 探索性）：单人 16/25，3 角色协作融合 19/25（+19%）——开放文案类任务，协作组研究/工程/产品三视角互补、覆盖更全，整合稿在清晰度与可执行性上明显优于单人稿；协作成本约 4 倍（代理数 × 轮次），详见 EXP-001-报告.md
 - 括号匹配（EXP-002 基线，n=1 探索性）：单人 15/15 = 协作 15/15（+0%）——确定性/教科书型编码任务，4 稿（单人 1 + 协作 3）功能完全一致、质量均 5/5/5，协作零质量增益但成本 4 倍，详见 EXP-002-报告.md
 - TTL 缓存（EXP-003 基线，n=1 探索性）：客观 13/13 全过（单人/协作一致）；主观质量（可读/健壮/效率，总分 15）单人 14/15，协作整合 15/15（+7%）——中等复杂度编码，增益微弱且来自“多稿择优 + 整合”（协作组内方差 10/12/15）而非视角互补，详见 EXP-003-报告.md

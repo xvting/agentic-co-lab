@@ -1,0 +1,6 @@
+# EXP-011 首跑盲评映射（评分完成前不查看）
+# 随机种子 seed=1102
+稿A = inventory_qa
+稿B = inventory_arch
+稿C = inventory_solo
+稿D = inventory_domain

@@ -14,4 +14,6 @@
 - `_harness/adapter_template.py`——adapter 模板（评测方按各解 USAGE.md 撰写）
 - `_harness/reference_impl.py` + `_harness/adapters/_reference_adapter.py`——校准 only（验证套件可运行：33/33；注入错误样例 30/33 确认可检出缺陷），**不计入基线**
 
-盲评：`_blind_r1/` 为匿名副本与映射存档（评分前不查看映射）。
+盲评：`_blind_r1/` 为匿名副本与映射存档（seed=1102，映射先行存档、评分后揭盲）。
+
+**首跑结果（2026-08-12，督导验收）**：门槛 4/4 通过；客观行为测试 4 稿全 **33/33**；盲评（接口类 5 维）solo 22 / arch 25 / domain 21 / qa 22 → 协作择优 25（arch），单人 22 → 协作增益 **+13.6%**（探索性，n=1/3，单评审）。详见 `EXP-011-报告.md`。
